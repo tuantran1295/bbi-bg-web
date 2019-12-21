@@ -1,6 +1,6 @@
 <header class="affix">
     <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light"><span class="navbar-brand"><a href="/"><img src="{{ asset('lg-bbivn.png')}}" alt="logo"></a></span>
+        <nav class="navbar navbar-expand-lg navbar-light"><span class="navbar-brand"><a href="/"><img src="{{ asset('images/lg-bbivn.png')}}" alt="logo"></a></span>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="/all/2">Ăn Uống</a></li>

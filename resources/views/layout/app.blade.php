@@ -4,7 +4,7 @@
         <title>@yield('title','Chào mừng đến với BBI Bắc Giang')</title>
         @yield('header')
     </head>
-    <body>
+    <body class="scroll endpage">
 
         @include('layout.nav')
         <div class="container">
