@@ -7,14 +7,14 @@ use Illuminate\Database\Eloquent\Model;
 class Company extends Model
 {
     public function category() {
-        $this->belongsTo(Category::class);
+       return $this->belongsTo(Category::class);
     }
 
     public function province() {
-        $this->belongsTo(Province::class);
+       return $this->belongsTo(Province::class);
     }
 
     public function images() {
-        $this->hasMany(Image::class);
+       return $this->hasMany(Image::class);
     }
 }

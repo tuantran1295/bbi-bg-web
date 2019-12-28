@@ -3,14 +3,12 @@
         <nav class="navbar navbar-expand-lg navbar-light"><span class="navbar-brand"><a href="/"><img src="{{ asset('images/lg-bbivn.png')}}" alt="logo"></a></span>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="/all/2">Ăn Uống</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/all/5">Hàng tiêu dùng</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/all/15">Thời trang- Phụ kiện</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/all/24">Dịch vụ</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/all/29">Nhà Cửa Đời Sống</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/all/9">Sức khỏe - Làm đẹp</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/all/20">Điện tử - Điện lạnh</a></li>
-                    <li class="nav-item">
+                    @foreach ($categories as $category)
+                        @if ($category->id < 8)
+                            <li class="nav-item"><a class="nav-link" href="category/{{$category->id}}">{{$category->name}}</a></li>
+                        @endif
+                    @endforeach
+{{--                    <li class="nav-item">--}}
 {{--                        <div class="nav-link">--}}
 {{--                            <div class="dropdown right-align">--}}
 {{--                                <div class="dropdown-label"><img src="/images/ico-en.png" alt=""> <i class="fa fa-caret-down"></i></div>--}}
@@ -21,7 +19,7 @@
 {{--                                </div>--}}
 {{--                            </div>--}}
 {{--                        </div>--}}
-                    </li>
+{{--                    </li>--}}
                     <li class="nav-item"><a class="nav-link pr-md-0 icon-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span></span></a></li>
                 </ul>
             </div>

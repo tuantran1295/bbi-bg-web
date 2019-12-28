@@ -9,6 +9,6 @@ class Province extends Model
     public $timestamps = false;
 
     public function companies() {
-        $this->hasMany(Company::class);
+       return $this->hasMany(Company::class);
     }
 }

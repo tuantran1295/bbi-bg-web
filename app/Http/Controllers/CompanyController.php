@@ -9,16 +9,19 @@ use App\Category;
 class CompanyController extends Controller
 {
     public function index() {
-        $companies = Company::all();
-        return view('diadiem', ['companies' => $companies]);
+        $categories = Category::all();
+        $companies = Company::inRandomOrder()->limit(35)->get();
+        return view('diadiem', ['categories'=> $categories,'companies' => $companies]);
     }
 
     public function getCompaniesByCategory(Category $category) {
-        $companies = $category->companies();
-        return view('category', ['companies' => $companies]);
+        $categories = Category::all();
+        $companies = $category->companies()->get();
+        return view('category', ['categories'=> $categories, 'companies' => $companies]);
     }
 
     public function show(Company $company) {
-        return view('company', compact($company));
+        $categories = Category::all();
+        return view(['categories'=> $categories, 'company' => $company]);
     }
 }

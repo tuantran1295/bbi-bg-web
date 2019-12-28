@@ -50,14 +50,11 @@
                         </form>
                         <div class="tag col-md-11 px-0">
                             <ul>
-                                <li><a href="all/9">làm đẹp</a></li>
-                                <li><a href="all/2">nhà hàng</a></li>
-                                <li><a href="all/3">coffee</a></li>
-                                <li><a href="all/9">spa</a></li>
-                                <li><a href="all/24">khách sạn</a></li>
-                                <li><a href="all/2">cafe</a></li>
-                                <li><a href="all/1">quán ăn</a></li>
-                                <li><a href="all/2">ăn uống</a></li>
+                                @foreach ($categories as $category)
+                                    @if ($category->id < 8)
+                                        <li><a href="category/{{$category->id}}">{{$category->name}}</a></li>
+                                    @endif
+                                @endforeach
                             </ul>
                         </div>
                         <div class="col-md-9 px-0 download">
@@ -81,42 +78,16 @@
                             <div class="list-ct">
                                 <div class="list-wrap">
                                     <div class="home-slider">
-                                        <div class="item">
-                                            <a class="home-banner" href="/agency/515/detail/"><img class="img-responsive" src="http://diadiem.bbivietnam.vn/api/uploads/9b1658a3-93f5-4315-ad9c-e0aff653b1ec.jpg" alt="Huy Mobile" style="height: 144px; width: 100%; padding-right: 5px;">
-                                                <h5>Huy Mobile</h5>
-                                                <p class="card-text"><small class="text-muted">Hữu Ái, Xã Tân Lãng, Huyện Lương Tài, Tỉnh Bắc Ninh</small></p>
-                                            </a>
-                                        </div>
-                                        <div class="item">
-                                            <a class="home-banner" href="/agency/4/detail/"><img class="img-responsive" src="http://diadiem.bbivietnam.vn/api/uploads/e21f2ddd-c8a1-4cf4-b0fe-2b8d2260b49d.jpg" alt="Elodie Nail &amp; Spa Relax" style="height: 144px; width: 100%; padding-right: 5px;">
-                                                <h5>Elodie Nail &amp; Spa Relax</h5>
-                                                <p class="card-text"><small class="text-muted">Ngõ 90, số nhà 12 Ngụy Như Kon tum, Phường Nhân Chính, Quận Thanh Xuân, Thành phố Hà Nội</small></p>
-                                            </a>
-                                        </div>
-                                        <div class="item">
-                                            <a class="home-banner" href="/agency/256/detail/"><img class="img-responsive" src="http://diadiem.bbivietnam.vn/api/uploads/aae830d3-3ab7-4fef-aebc-813a13715351.jpg" alt="Gà không lối thoát" style="height: 144px; width: 100%; padding-right: 5px;">
-                                                <h5>Gà không lối thoát</h5>
-                                                <p class="card-text"><small class="text-muted">Số nhà 5B, ngõ 5, Ao Sen, Phường Mộ Lao, Quận Hà Đông, Thành phố Hà Nội</small></p>
-                                            </a>
-                                        </div>
-                                        <div class="item">
-                                            <a class="home-banner" href="/agency/512/detail/"><img class="img-responsive" src="http://diadiem.bbivietnam.vn/api/uploads/99d2deda-d203-43a6-aa4f-d38c74ca9f75.jpg" alt="Nội thất ô tô Qúy Hùng" style="height: 144px; width: 100%; padding-right: 5px;">
-                                                <h5>Nội thất ô tô Qúy Hùng</h5>
-                                                <p class="card-text"><small class="text-muted">Khu 1, phường Yên Thanh, TP Uông Bí, tỉnh Quảng Ninh, Phường Yên Thanh, Thành phố Uông Bí, Tỉnh Quảng Ninh</small></p>
-                                            </a>
-                                        </div>
-                                        <div class="item">
-                                            <a class="home-banner" href="/agency/1/detail/"><img class="img-responsive" src="http://diadiem.bbivietnam.vn/api/uploads/74f270b9-94de-44f1-9a97-3999e9a9d449.jpg" alt="AMARONE COFFEE" style="height: 144px; width: 100%; padding-right: 5px;">
-                                                <h5>AMARONE COFFEE</h5>
-                                                <p class="card-text"><small class="text-muted">AMARONE COFFEE. Tầng 1,tòa nhà 17T11 Nguyễn Thị Định, Phường Trung Hoà, Quận Cầu Giấy, Thành phố Hà Nội</small></p>
-                                            </a>
-                                        </div>
-                                        <div class="item">
-                                            <a class="home-banner" href="/agency/257/detail/"><img class="img-responsive" src="http://diadiem.bbivietnam.vn/api/uploads/42ed4209-a894-44a8-afe3-bb02a862accc.jpeg" alt="Siêu thị điện máy Minh Quân" style="height: 144px; width: 100%; padding-right: 5px;">
-                                                <h5>Siêu thị điện máy Minh Quân</h5>
-                                                <p class="card-text"><small class="text-muted">Đường Nguyễn Du, thị trấn Quỳnh Côi, huyện Quỳnh Phụ, tỉnh Thái Bình, Thị trấn Quỳnh Côi, Huyện Quỳnh Phụ, Tỉnh Thái Bình</small></p>
-                                            </a>
-                                        </div>
+                                        @foreach($companies as $company)
+                                            @if($company-> id < 11)
+                                                <div class="item">
+                                                    <a class="home-banner" href="company/{{$company->id}}"><img class="img-responsive" src="http://diadiem.bbivietnam.vn/api/uploads/9b1658a3-93f5-4315-ad9c-e0aff653b1ec.jpg" alt="{{$company->name}}" style="height: 144px; width: 100%; padding-right: 5px;">
+                                                        <h5>{{$company->name}}</h5>
+                                                        <p class="card-text"><small class="text-muted"></small></p>
+                                                    </a>
+                                                </div>
+                                            @endif
+                                        @endforeach
                                     </div>
                                 </div>
                             </div>
@@ -130,42 +101,16 @@
                             <div class="list-ct">
                                 <div class="list-wrap">
                                     <div class="home-slider">
-                                        <div class="item">
-                                            <a class="home-banner" href="/agency/515/detail/"><img class="img-responsive" src="http://diadiem.bbivietnam.vn/api/uploads/9b1658a3-93f5-4315-ad9c-e0aff653b1ec.jpg" alt="Huy Mobile" style="height: 144px; width: 100%; padding-right: 5px;">
-                                                <h5>Huy Mobile</h5>
-                                                <p class="card-text"><small class="text-muted">Hữu Ái, Xã Tân Lãng, Huyện Lương Tài, Tỉnh Bắc Ninh</small></p>
-                                            </a>
-                                        </div>
-                                        <div class="item">
-                                            <a class="home-banner" href="/agency/4/detail/"><img class="img-responsive" src="http://diadiem.bbivietnam.vn/api/uploads/e21f2ddd-c8a1-4cf4-b0fe-2b8d2260b49d.jpg" alt="Elodie Nail &amp; Spa Relax" style="height: 144px; width: 100%; padding-right: 5px;">
-                                                <h5>Elodie Nail &amp; Spa Relax</h5>
-                                                <p class="card-text"><small class="text-muted">Ngõ 90, số nhà 12 Ngụy Như Kon tum, Phường Nhân Chính, Quận Thanh Xuân, Thành phố Hà Nội</small></p>
-                                            </a>
-                                        </div>
-                                        <div class="item">
-                                            <a class="home-banner" href="/agency/256/detail/"><img class="img-responsive" src="http://diadiem.bbivietnam.vn/api/uploads/aae830d3-3ab7-4fef-aebc-813a13715351.jpg" alt="Gà không lối thoát" style="height: 144px; width: 100%; padding-right: 5px;">
-                                                <h5>Gà không lối thoát</h5>
-                                                <p class="card-text"><small class="text-muted">Số nhà 5B, ngõ 5, Ao Sen, Phường Mộ Lao, Quận Hà Đông, Thành phố Hà Nội</small></p>
-                                            </a>
-                                        </div>
-                                        <div class="item">
-                                            <a class="home-banner" href="/agency/512/detail/"><img class="img-responsive" src="http://diadiem.bbivietnam.vn/api/uploads/99d2deda-d203-43a6-aa4f-d38c74ca9f75.jpg" alt="Nội thất ô tô Qúy Hùng" style="height: 144px; width: 100%; padding-right: 5px;">
-                                                <h5>Nội thất ô tô Qúy Hùng</h5>
-                                                <p class="card-text"><small class="text-muted">Khu 1, phường Yên Thanh, TP Uông Bí, tỉnh Quảng Ninh, Phường Yên Thanh, Thành phố Uông Bí, Tỉnh Quảng Ninh</small></p>
-                                            </a>
-                                        </div>
-                                        <div class="item">
-                                            <a class="home-banner" href="/agency/1/detail/"><img class="img-responsive" src="http://diadiem.bbivietnam.vn/api/uploads/74f270b9-94de-44f1-9a97-3999e9a9d449.jpg" alt="AMARONE COFFEE" style="height: 144px; width: 100%; padding-right: 5px;">
-                                                <h5>AMARONE COFFEE</h5>
-                                                <p class="card-text"><small class="text-muted">AMARONE COFFEE. Tầng 1,tòa nhà 17T11 Nguyễn Thị Định, Phường Trung Hoà, Quận Cầu Giấy, Thành phố Hà Nội</small></p>
-                                            </a>
-                                        </div>
-                                        <div class="item">
-                                            <a class="home-banner" href="/agency/257/detail/"><img class="img-responsive" src="http://diadiem.bbivietnam.vn/api/uploads/42ed4209-a894-44a8-afe3-bb02a862accc.jpeg" alt="Siêu thị điện máy Minh Quân" style="height: 144px; width: 100%; padding-right: 5px;">
-                                                <h5>Siêu thị điện máy Minh Quân</h5>
-                                                <p class="card-text"><small class="text-muted">Đường Nguyễn Du, thị trấn Quỳnh Côi, huyện Quỳnh Phụ, tỉnh Thái Bình, Thị trấn Quỳnh Côi, Huyện Quỳnh Phụ, Tỉnh Thái Bình</small></p>
-                                            </a>
-                                        </div>
+                                        @foreach($companies as $company)
+                                            @if($company-> id > 11 && $company->id < 21)
+                                                <div class="item">
+                                                    <a class="home-banner" href="company/{{$company->id}}"><img class="img-responsive" src="http://diadiem.bbivietnam.vn/api/uploads/9b1658a3-93f5-4315-ad9c-e0aff653b1ec.jpg" alt="{{$company->name}}" style="height: 144px; width: 100%; padding-right: 5px;">
+                                                        <h5>{{$company->name}}</h5>
+                                                        <p class="card-text"><small class="text-muted"></small></p>
+                                                    </a>
+                                                </div>
+                                            @endif
+                                        @endforeach
                                     </div>
                                 </div>
                             </div>
@@ -177,111 +122,17 @@
                             </div>
                             <div class="list-ct">
                                 <div class="row no-gutters list-wrap">
-                                    <div class="col-md-4 item">
-                                        <a href="/agency/256/detail/">
-                                            <div class="background-item" style="background-image: url(&quot;http://diadiem.bbivietnam.vn/api/uploads/aae830d3-3ab7-4fef-aebc-813a13715351.jpg&quot;);"></div>
-                                            <h5>Gà không lối thoát</h5>
-                                            <p class="card-text"><small class="text-muted">Số nhà 5B, ngõ 5, Ao Sen, Phường Mộ Lao, Quận Hà Đông, Thành phố Hà Nội</small></p>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-4 item">
-                                        <a href="/agency/512/detail/">
-                                            <div class="background-item" style="background-image: url(&quot;http://diadiem.bbivietnam.vn/api/uploads/99d2deda-d203-43a6-aa4f-d38c74ca9f75.jpg&quot;);"></div>
-                                            <h5>Nội thất ô tô Qúy Hùng</h5>
-                                            <p class="card-text"><small class="text-muted">Khu 1, phường Yên Thanh, TP Uông Bí, tỉnh Quảng Ninh, Phường Yên Thanh, Thành phố Uông Bí, Tỉnh Quảng Ninh</small></p>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-4 item">
-                                        <a href="/agency/1/detail/">
-                                            <div class="background-item" style="background-image: url(&quot;http://diadiem.bbivietnam.vn/api/uploads/74f270b9-94de-44f1-9a97-3999e9a9d449.jpg&quot;);"></div>
-                                            <h5>AMARONE COFFEE</h5>
-                                            <p class="card-text"><small class="text-muted">AMARONE COFFEE. Tầng 1,tòa nhà 17T11 Nguyễn Thị Định, Phường Trung Hoà, Quận Cầu Giấy, Thành phố Hà Nội</small></p>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-4 item">
-                                        <a href="/agency/257/detail/">
-                                            <div class="background-item" style="background-image: url(&quot;http://diadiem.bbivietnam.vn/api/uploads/42ed4209-a894-44a8-afe3-bb02a862accc.jpeg&quot;);"></div>
-                                            <h5>Siêu thị điện máy Minh Quân</h5>
-                                            <p class="card-text"><small class="text-muted">Đường Nguyễn Du, thị trấn Quỳnh Côi, huyện Quỳnh Phụ, tỉnh Thái Bình, Thị trấn Quỳnh Côi, Huyện Quỳnh Phụ, Tỉnh Thái Bình</small></p>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-4 item">
-                                        <a href="/agency/513/detail/">
-                                            <div class="background-item" style="background-image: url(&quot;http://diadiem.bbivietnam.vn/api/uploads/51a6eb69-4648-448f-b895-433dde79fe77.jpg&quot;);"></div>
-                                            <h5>Joys Coffee</h5>
-                                            <p class="card-text"><small class="text-muted">Số 81/343 Đội Cấn, Ba Đình, HN, Phường Đội Cấn, Quận Ba Đình, Thành phố Hà Nội</small></p>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-4 item">
-                                        <a href="/agency/2/detail/">
-                                            <div class="background-item" style="background-image: url(&quot;http://diadiem.bbivietnam.vn/api/uploads/395154e9-19d7-451b-801c-e7c006146aa0.jpg&quot;);"></div>
-                                            <h5>Máy tính Việt Nhật</h5>
-                                            <p class="card-text"><small class="text-muted">Số 307 Cát Bi, Phường Cát Bi, Quận Hải An, Thành phố Hải Phòng</small></p>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-4 item">
-                                        <a href="/agency/514/detail/">
-                                            <div class="background-item" style="background-image: url(&quot;http://diadiem.bbivietnam.vn/api/uploads/d84cec42-c937-4ffe-85a3-ee94b932e3fe.jpg&quot;);"></div>
-                                            <h5>Công ty TNHH Thương mại An Chuẩn</h5>
-                                            <p class="card-text"><small class="text-muted">Số 195/193 Văn Cao, Phường Đằng Lâm, Quận Hải An, Thành phố Hải Phòng</small></p>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-4 item">
-                                        <a href="/agency/3/detail/">
-                                            <div class="background-item" style="background-image: url(&quot;http://diadiem.bbivietnam.vn/api/uploads/9cdac798-2e8f-431b-b7ae-2917b7a0dd25.jpg&quot;);"></div>
-                                            <h5>DINH HOTEL</h5>
-                                            <p class="card-text"><small class="text-muted">Số 2, ngõ 248 Hoàng Ngân, Phường Trung Hoà, Quận Cầu Giấy, Thành phố Hà Nội</small></p>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-4 item">
-                                        <a href="/agency/515/detail/">
-                                            <div class="background-item" style="background-image: url(&quot;http://diadiem.bbivietnam.vn/api/uploads/9b1658a3-93f5-4315-ad9c-e0aff653b1ec.jpg&quot;);"></div>
-                                            <h5>Huy Mobile</h5>
-                                            <p class="card-text"><small class="text-muted">Hữu Ái, Xã Tân Lãng, Huyện Lương Tài, Tỉnh Bắc Ninh</small></p>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-4 item">
-                                        <a href="/agency/4/detail/">
-                                            <div class="background-item" style="background-image: url(&quot;http://diadiem.bbivietnam.vn/api/uploads/e21f2ddd-c8a1-4cf4-b0fe-2b8d2260b49d.jpg&quot;);"></div>
-                                            <h5>Elodie Nail &amp; Spa Relax</h5>
-                                            <p class="card-text"><small class="text-muted">Ngõ 90, số nhà 12 Ngụy Như Kon tum, Phường Nhân Chính, Quận Thanh Xuân, Thành phố Hà Nội</small></p>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-4 item">
-                                        <a href="/agency/260/detail/">
-                                            <div class="background-item" style="background-image: url(&quot;http://diadiem.bbivietnam.vn/api/uploads/4978a6ef-9efd-455a-8f21-b883b861b502.jpg&quot;);"></div>
-                                            <h5>Công ty TNHH một thành viên thiết bị công nghệ Việt Thái</h5>
-                                            <p class="card-text"><small class="text-muted">Số nhà 294 đường Trường Chinh, thị trấn Thắng, huyện Hiệp Hòa, tỉnh Bắc Giang, Thị trấn Thắng, Huyện Hiệp Hòa, Tỉnh Bắc Giang</small></p>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-4 item">
-                                        <a href="/agency/516/detail/">
-                                            <div class="background-item" style="background-image: url(&quot;http://diadiem.bbivietnam.vn/api/uploads/924a11ea-499a-48f5-996e-783404d53d05.jpg&quot;);"></div>
-                                            <h5>Lá xanh Coffee</h5>
-                                            <p class="card-text"><small class="text-muted">DH7, đường Vũ Đình Liệu, khu nhà ở Nam Long,, Phường Hưng Thạnh, Quận Cái Răng, Thành phố Cần Thơ</small></p>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-4 item">
-                                        <a href="/agency/5/detail/">
-                                            <div class="background-item" style="background-image: url(&quot;http://diadiem.bbivietnam.vn/api/uploads/dd280b4f-101b-4da6-96e0-69b39999d83c.jpg&quot;);"></div>
-                                            <h5>SPA THU ANH</h5>
-                                            <p class="card-text"><small class="text-muted">32 khu tập thể CK75, Xã Tả Thanh Oai, Huyện Thanh Trì, Thành phố Hà Nội</small></p>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-4 item">
-                                        <a href="/agency/261/detail/">
-                                            <div class="background-item" style="background-image: url(&quot;http://diadiem.bbivietnam.vn/api/uploads/6507c1ef-4126-4eb8-a5bb-981df697374a.jpg&quot;);"></div>
-                                            <h5>Điện máy Trường Thùy</h5>
-                                            <p class="card-text"><small class="text-muted">Phố Chợ Đồn, Kha Sơn, Phú Bình, Thái Nguyên, Xã Kha Sơn, Huyện Phú Bình, Tỉnh Thái Nguyên</small></p>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-4 item">
-                                        <a href="/agency/517/detail/">
-                                            <div class="background-item" style="background-image: url(&quot;http://diadiem.bbivietnam.vn/api/uploads/76368099-7bab-4e97-8bf0-c213f62f4076.jpg&quot;);"></div>
-                                            <h5>Quang Đạt Hotel</h5>
-                                            <p class="card-text"><small class="text-muted">Tầng 3, tòa nhà 7 tầng Khách sạn Quang Đạt New World, đường Phù Liễn, tổ 19, Phường Hoàng Văn Thụ, Thành phố Thái Nguyên, Tỉnh Thái Nguyên</small></p>
-                                        </a>
-                                    </div>
+                                    @foreach($companies as $company)
+                                        @if($company->id > 21)
+                                            <div class="col-md-4 item">
+                                                <a href="company/{{$company->id}}}">
+                                                    <div class="background-item" style="background-image: url(&quot;http://diadiem.bbivietnam.vn/api/uploads/aae830d3-3ab7-4fef-aebc-813a13715351.jpg&quot;);"></div>
+                                                    <h5>{{$company->name}}</h5>
+                                                    <p class="card-text"><small class="text-muted">{{$company->address}}</small></p>
+                                                </a>
+                                            </div>
+                                        @endif
+                                    @endforeach
                                 </div>
                                 <div class="text-center my-3"><a class="align-self-center d-inline-block px-5 py-2 bg-light rounded text-dark font-weight-bold border" href="/list-all"><span>xem tất cả</span></a></div>
                             </div>
