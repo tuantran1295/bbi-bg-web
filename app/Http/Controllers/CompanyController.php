@@ -22,6 +22,6 @@ class CompanyController extends Controller
 
     public function show(Company $company) {
         $categories = Category::all();
-        return view(['categories'=> $categories, 'company' => $company]);
+        return view('company', ['categories'=> $categories, 'company' => $company]);
     }
 }

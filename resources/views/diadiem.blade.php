@@ -28,7 +28,7 @@
                 <div class="col-md-5">
                     <div class="col-left">
                         <div class="main-title"><span>Doanh nghiệp</span>
-                            <h2>Đã kết nối với ứng dụng BBI Mall</h2></div>
+                            <h2>Đã kết nối với BBI Bắc Giang</h2></div>
                         <form class="col-md-11 px-0">
                             <div class="search-tool">
                                 <div class="input-group">
@@ -81,7 +81,7 @@
                                         @foreach($companies as $company)
                                             @if($company-> id < 11)
                                                 <div class="item">
-                                                    <a class="home-banner" href="company/{{$company->id}}"><img class="img-responsive" src="http://diadiem.bbivietnam.vn/api/uploads/9b1658a3-93f5-4315-ad9c-e0aff653b1ec.jpg" alt="{{$company->name}}" style="height: 144px; width: 100%; padding-right: 5px;">
+                                                    <a class="home-banner" href="company/{{$company->id}}"><img class="img-responsive" src="https://picsum.photos/1280/768" alt="{{$company->name}}" style="height: 144px; width: 100%; padding-right: 5px;">
                                                         <h5>{{$company->name}}</h5>
                                                         <p class="card-text"><small class="text-muted"></small></p>
                                                     </a>
@@ -126,7 +126,7 @@
                                         @if($company->id > 21)
                                             <div class="col-md-4 item">
                                                 <a href="company/{{$company->id}}}">
-                                                    <div class="background-item" style="background-image: url(&quot;http://diadiem.bbivietnam.vn/api/uploads/aae830d3-3ab7-4fef-aebc-813a13715351.jpg&quot;);"></div>
+                                                    <div class="background-item" style="background-image: url('https://picsum.photos/1280/768');"></div>
                                                     <h5>{{$company->name}}</h5>
                                                     <p class="card-text"><small class="text-muted">{{$company->address}}</small></p>
                                                 </a>
