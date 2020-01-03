@@ -22,6 +22,7 @@ class CompanyController extends Controller
 
     public function show(Company $company) {
         $categories = Category::all();
-        return view('company', ['categories'=> $categories, 'company' => $company]);
+        $images = $company->images()->get();
+        return view('company', ['categories'=> $categories, 'company' => $company, 'images' => $images]);
     }
 }

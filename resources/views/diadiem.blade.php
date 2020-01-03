@@ -81,7 +81,7 @@
                                         @foreach($companies as $company)
                                             @if($company-> id < 11)
                                                 <div class="item">
-                                                    <a class="home-banner" href="company/{{$company->id}}"><img class="img-responsive" src="https://picsum.photos/1280/768" alt="{{$company->name}}" style="height: 144px; width: 100%; padding-right: 5px;">
+                                                    <a class="home-banner" href="company/{{$company->id}}"><img class="img-responsive" src="{{$company->images()->first()->url}}" alt="{{$company->name}}" style="height: 144px; width: 100%; padding-right: 5px;">
                                                         <h5>{{$company->name}}</h5>
                                                         <p class="card-text"><small class="text-muted"></small></p>
                                                     </a>
@@ -104,7 +104,7 @@
                                         @foreach($companies as $company)
                                             @if($company-> id > 11 && $company->id < 21)
                                                 <div class="item">
-                                                    <a class="home-banner" href="company/{{$company->id}}"><img class="img-responsive" src="http://diadiem.bbivietnam.vn/api/uploads/9b1658a3-93f5-4315-ad9c-e0aff653b1ec.jpg" alt="{{$company->name}}" style="height: 144px; width: 100%; padding-right: 5px;">
+                                                    <a class="home-banner" href="company/{{$company->id}}"><img class="img-responsive" src="{{$company->images()->first()->url}}" alt="{{$company->name}}" style="height: 144px; width: 100%; padding-right: 5px;">
                                                         <h5>{{$company->name}}</h5>
                                                         <p class="card-text"><small class="text-muted"></small></p>
                                                     </a>
@@ -126,7 +126,7 @@
                                         @if($company->id > 21)
                                             <div class="col-md-4 item">
                                                 <a href="company/{{$company->id}}}">
-                                                    <div class="background-item" style="background-image: url('https://picsum.photos/1280/768');"></div>
+                                                    <div class="background-item" style="background-image: url('{{$company->images()->first()->url}}');"></div>
                                                     <h5>{{$company->name}}</h5>
                                                     <p class="card-text"><small class="text-muted">{{$company->address}}</small></p>
                                                 </a>

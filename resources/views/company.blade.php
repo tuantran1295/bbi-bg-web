@@ -39,87 +39,26 @@
                         <div class="gallery-container">
                             <div class="gallery-slider">
                                 <div class="image-slider">
-                                    <div>
-                                        <div class="image-container" tabindex="-1" style="width: 100%; display: inline-block;">
-                                            <div class="image-background" style="background-image: url(&quot;http://diadiem.bbivietnam.vn/api/uploads/ce65caf8-36cf-40a5-b7cb-14b163cafe43.jpg&quot;);"></div>
+                                    @foreach($images as $image)
+                                        <div>
+                                            <div class="image-container" style="width: 100%; display: inline-block;">
+                                                <div class="image-background" style="background-image: url('/{{$image->url}}');"></div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div>
-                                        <div class="image-container" tabindex="-1" style="width: 100%; display: inline-block;">
-                                            <div class="image-background" style="background-image: url(&quot;http://diadiem.bbivietnam.vn/api/uploads/aae830d3-3ab7-4fef-aebc-813a13715351.jpg&quot;);"></div>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="image-container" tabindex="-1" style="width: 100%; display: inline-block;">
-                                            <div class="image-background" style="background-image: url(&quot;http://diadiem.bbivietnam.vn/api/uploads/d802a05d-b191-44e2-a8cf-0c52d0bdc0f2.jpg&quot;);"></div>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="image-container" tabindex="-1" style="width: 100%; display: inline-block;">
-                                            <div class="image-background" style="background-image: url(&quot;http://diadiem.bbivietnam.vn/api/uploads/02f2ec9e-0dba-4bab-8403-f46220f589b8.jpg&quot;);"></div>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="image-container" tabindex="-1" style="width: 100%; display: inline-block;">
-                                            <div class="image-background" style="background-image: url(&quot;http://diadiem.bbivietnam.vn/api/uploads/381686a6-f83c-44a6-9827-168588fcc752.jpg&quot;);"></div>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="image-container" tabindex="-1" style="width: 100%; display: inline-block;">
-                                            <div class="image-background" style="background-image: url(&quot;http://diadiem.bbivietnam.vn/api/uploads/7c97ce3f-25e5-43d3-9d7b-ca8ad9d31016.jpg&quot;);"></div>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="image-container" tabindex="-1" style="width: 100%; display: inline-block;">
-                                            <div class="image-background" style="background-image: url(&quot;http://diadiem.bbivietnam.vn/api/uploads/d33864d1-c348-4794-9e39-61b5ae53957c.jpg&quot;);"></div>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="image-container" tabindex="-1" style="width: 100%; display: inline-block;">
-                                            <div class="image-background" style="background-image: url(&quot;http://diadiem.bbivietnam.vn/api/uploads/224b6763-3de3-46be-8f4f-86f7a5828647.jpg&quot;);"></div>
-                                        </div>
-                                    </div>
+                                    @endforeach
                                 </div>
                             </div>
                             <div class="gallery-footer">
                                 <div class="row">
                                     <div class="col-12">
                                         <div class="thumbnail-slider">
-                                            <div>
-                                                <div class="image-thumbnail" tabindex="-1" style="width: 100%; display: inline-block;">
-                                                    <div class="image-background" style="background-image: url(&quot;http://diadiem.bbivietnam.vn/api/uploads/aae830d3-3ab7-4fef-aebc-813a13715351.jpg&quot;);"></div>
+                                            @foreach($images as $image)
+                                                <div>
+                                                    <div class="image-thumbnail" style="width: 100%; display: inline-block;">
+                                                        <div class="image-background" style="background-image: url('/{{$image->url}}');"></div>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div>
-                                                <div class="image-thumbnail" tabindex="-1" style="width: 100%; display: inline-block;">
-                                                    <div class="image-background" style="background-image: url(&quot;http://diadiem.bbivietnam.vn/api/uploads/d802a05d-b191-44e2-a8cf-0c52d0bdc0f2.jpg&quot;);"></div>
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <div class="image-thumbnail" tabindex="-1" style="width: 100%; display: inline-block;">
-                                                    <div class="image-background active" style="background-image: url(&quot;http://diadiem.bbivietnam.vn/api/uploads/02f2ec9e-0dba-4bab-8403-f46220f589b8.jpg&quot;);"></div>
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <div class="image-thumbnail" tabindex="-1" style="width: 100%; display: inline-block;">
-                                                    <div class="image-background" style="background-image: url(&quot;http://diadiem.bbivietnam.vn/api/uploads/381686a6-f83c-44a6-9827-168588fcc752.jpg&quot;);"></div>
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <div class="image-thumbnail" tabindex="-1" style="width: 100%; display: inline-block;">
-                                                    <div class="image-background" style="background-image: url(&quot;http://diadiem.bbivietnam.vn/api/uploads/7c97ce3f-25e5-43d3-9d7b-ca8ad9d31016.jpg&quot;);"></div>
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <div class="image-thumbnail" tabindex="-1" style="width: 100%; display: inline-block;">
-                                                    <div class="image-background" style="background-image: url(&quot;http://diadiem.bbivietnam.vn/api/uploads/d33864d1-c348-4794-9e39-61b5ae53957c.jpg&quot;);"></div>
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <div class="image-thumbnail" tabindex="-1" style="width: 100%; display: inline-block;">
-                                                    <div class="image-background" style="background-image: url(&quot;http://diadiem.bbivietnam.vn/api/uploads/224b6763-3de3-46be-8f4f-86f7a5828647.jpg&quot;);"></div>
-                                                </div>
-                                            </div>
+                                            @endforeach
                                         </div>
                                     </div>
                                 </div>
