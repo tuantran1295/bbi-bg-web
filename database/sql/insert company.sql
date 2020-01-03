@@ -1,6 +1,6 @@
 USE bbi_bg_web_db;
 INSERT INTO companies (name, about, address, phone, link, bbi_id, opening_time, category_id, province_id, created_at, updated_at)
-VALUES 
+VALUES
 ('CÔNG TY TNHH TRƯỜNG LONG', 'Gara ô tô và nội thất ô tô tích điểm lên đến 150%', 'Khu Mai Rùa, Thôn Mỹ Cầu, xã tân Mỹ, TP Bắc Giang, Xã Tân Mỹ, Thành phố Bắc Giang, Tỉnh Bắc Giang', '02043.528.999/ 0913.183.888', 'tuvanmuaxe.vn/', '333186', '08:00 - 17:00 (Thứ 2 - Chủ nhật)', 4, 6, now(), now()),
 ('HỘ KINH DOANH TRẦN QUỐC LÂN', 'Tặng lên đến 100% tích điểm', 'Ổ Chương, Thị trấn Vôi, Huyện Lạng Giang, Tỉnh Bắc Giang', '0904.308.258', '', 'Putin8', '08:00 - 19:00 (Thứ 2 - Chủ nhật)', 12, 5, now(), now()),
 ('HỘ KINH DOANH NGUYỄN THỊ TÍNH', 'Tặng tích điểm đến 50%', 'Số 67 Lương Văn Nắm, Phường Dĩnh Kế, Thành phố Bắc Giang, Tỉnh Bắc Giang', '0975.183.608', '','TINH73', '08:00 - 20:00 (Thứ 2 - Chủ nhật)', 2, 6, now(), now()),
@@ -41,6 +41,7 @@ VALUES
 ('TRUNG TÂM ĐIỆN MÁY KHÁ HUYỀN', 'Tiêu dùng tích điểm từ 50% lên đến 100%', 'Thôn Ngọc Mai, Xã Chu Điện, Huyện Lục Nam, Tỉnh Bắc Giang', '0989.966.658', '', 'KHA1984&&&', '07:30 - 22:00 (Thứ 2 - Chủ nhật)', 7, 8, now(), now()),
 ('HỘ KINH DOANH NGUYỄN THỊ MAI', ' Thanh toán trả trước - gạch cước trả sau. Tích điểm lên đến 200% tích điểm liên hệ 098 2729636', 'Số nhà 24A phố Ngô Xá, Thị trấn Cao Thượng, Huyện Tân Yên, Tỉnh Bắc Giang', '0986.131.216 - 098 2729636', '', 'BAOBEO86', '08:30 - 22:30 (Thứ 2 - Chủ nhật)', 4, 2, now(), now()),
 ('KING COFFEE', 'Tiêu dùng tích điểm lên đến 100%', 'Số 126 đường Hoàng Văn Thụ, Phường Hoàng Văn Thụ, Thành phố Bắc Giang, Tỉnh Bắc Giang', '0966.913.686', '', 'DG9999', '09:00 - 22:30 (Thứ 2 - Chủ nhật)', 16, 6, now(), now()),
+('TTPP GAS VÀ BẾP GAS TRƯỜNG GIANG', 'Tiêu dùng tích điểm từ 10% lên đến 300%', 'Lô số 65B đường Trần Quang Khải, Phường Thọ Xương, Thành phố Bắc Giang, Tỉnh Bắc Giang', '0948.282.445', '', 'TG1978', '09:00 - 23:00 (Thứ 2 - Chủ nhật)', 2, 6, now(), now()),
 ('DỊCH VỤ XÂY DỰNG NGUYỄN VĂN HẢI', 'Dịch vụ xây dựng tích điểm từ 10% lên đến 300%', 'Thôn Kép, Xã Hương Gián, Huyện Yên Dũng, Tỉnh Bắc Giang', '0988.805.445', '', 'HAI1981', '08:30 - 22:00 (Thứ 2 - Chủ nhật)', 8, 7, now(), now()),
 ('SIÊU THỊ GỐM SỨ BÁT TRÀNG - FAMILY MART', 'Siêu thị Gốm Sứ Bát Tràng Nguyễn Thị Giang tích điểm từ 10% đến 300%', 'Số 248+ 250 đường Nguyễn Công Hãng, Phường Trần Nguyên Hãn, Thành phố Bắc Giang, Tỉnh Bắc Giang', '0913.258.032', '', 'NG1963', '08:30 - 22:30 (Thứ 2 - Chủ nhật)', 2, 6, now(), now()),
 ('ĐIỆN MÁY SƠN LƯƠNG', 'Tích điểm từ 10% đến 300%', 'Thôn Lý Viên, Xã Bắc Lý, Huyện Hiệp Hòa, Tỉnh Bắc Giang', '0974.598.689', '', 'CSON75', '08:00 - 22:30 (Thứ 2 - Chủ nhật)', 2, 3, now(), now()),
@@ -52,7 +53,8 @@ VALUES
 ('HKD ĐẶNG THỊ ÚT', 'Tích điểm lên đến 100%. Các lớp học tiếng Anh Offline.Nhận học sinh từ mất gốc đến học sinh ôn thi Đại học và học sinh giỏi', 'Thôn Đồng Mơ, Xã Tam Hiệp, Huyện Yên Thế, Tỉnh Bắc Giang', '0986.557.020', '', 'UT6342', '08:00 - 22:00 (Thứ 2 - Chủ nhật)', 10, 1, now(), now()),
 ('CỬA HÀNG THUỐC THÚ Y VŨ VÂN', 'Tích điểm từ 10% đến 300%.', 'Thôn Thượng, Xã Minh Đức, Huyện Việt Yên, Tỉnh Bắc Giang', '0357.960.816', '', 'TV1988', '08:00 - 22:00 (Thứ 2 - Chủ nhật)', 6, 4, now(), now()),
 ('NHÀ NGHỈ BA SAO', 'Tích điểm từ 10% lên đến 300%', 'Lô số 44- N23 đường Hoàng Quốc Việt,, Phường Xương Giang, Thành phố Bắc Giang, Tỉnh Bắc Giang', '0979.432.567', '', 'DHANH54', '06:00 - 22:30 (Thứ 2 - Chủ nhật)',4, 6, now(), now()),
-('THẾ GIỚI DI ĐỘNG NGA SƠN', 'Tích điểm tù 10% đến 300%', 'SN 398, Trường Chinh, Xóm Chùa, Nam Tiến, Phổ Yên, Bắc Giang, Phường Lê Lợi, Thành phố Bắc Giang, Tỉnh Bắc Giang', '0915.550.593', '', 'TN1982', '08:30 - 22:30 (Thứ 2 - Chủ nhật)', 17, 6, now(), now()),
 ('KARAOKE NEW YORK', 'Tiêu dùng tích điểm từ 10% lên đến 300%', 'Lô F32+33 đường Trần Quang Khải,, Phường Thọ Xương, Thành phố Bắc Giang, Tỉnh Bắc Giang', '0975.089.199', '', 'NGLIEN1971', '08:30 - 22:00 (Thứ 2 - Chủ nhật)', 4, 6, now(), now()),
 ('THỜI TRANG TÓC ĐẸP NGỌC LY', 'Tích điểm lên đến 100%', 'Số 20 đường Nguyễn Duy Năng,, Phường Thọ Xương, Thành phố Bắc Giang, Tỉnh Bắc Giang', '0352.001.326', '', 'LY1978', '08:30 - 22:00 (Thứ 2 - Chủ nhật)', 6, 6, now(), now()),
-('TTPP GAS VÀ BẾP GAS TRƯỜNG GIANG', 'Tiêu dùng tích điểm từ 10% lên đến 300%', 'Lô số 65B đường Trần Quang Khải, Phường Thọ Xương, Thành phố Bắc Giang, Tỉnh Bắc Giang', '0948.282.445', '', 'TG1978', '09:00 - 23:00 (Thứ 2 - Chủ nhật)', 2, 6, now(), now());
+('HỘ KINH DOANH NGỤY NGỌC ĐẠT', 'Cây cảnh tích điểm từ 50% đến 100%', 'SN 18, Tổ dân phố Hà Vị 2, Phường Thọ Xương, Thành phố Bắc Giang, Tỉnh Bắc Giang', '0982.949.757', '', 'NGOCDAT376', '08:30 - 21:30 (Thứ 2 - Chủ nhật)', 4, 6, now(), now()),
+('HỘ KINH DOANH NGUYỄN THỊ YÊN', 'Tiêu dùng tích điểm lên đến 100%', 'Thôn Hà Mỹ, Xã Chu Điện, Huyện Lục Nam, Tỉnh Bắc Giang', '0382.837.288', '', 'YEN177', '08:30 - 22:00 (Thứ 2 - Chủ nhật)', 5, 8, now(), now());
+

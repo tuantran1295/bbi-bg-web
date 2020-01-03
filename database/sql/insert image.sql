@@ -1,0 +1,217 @@
+use bbi_bg_web_db;
+INSERT INTO images (url, company_id, created_at, updated_at) VALUES
+('images/upload/1/0dee0b0a-7eae-4e8d-b951-4595c8b1dd9f.jpg', 1, now(), now()),
+('images/upload/1/3a1748d3-b750-4e4e-884b-2ecccbb90996.jpg', 1, now(), now()),
+('images/upload/1/5d54d382-fa53-412f-b382-346330d66e27.jpg', 1, now(), now()),
+('images/upload/1/5ec7eae9-42df-4bc8-9e47-5ba7cf133b2d.jpg', 1, now(), now()),
+('images/upload/1/645f60c7-03c2-4b03-a75b-5945e0860168.jpg', 1, now(), now()),
+('images/upload/1/2221b66a-bbc8-4226-a632-8260b0ae42a4.jpg', 1, now(), now()),
+('images/upload/1/80923c48-b8b9-4530-a064-0a31f59ec47e.jpg', 1, now(), now()),
+('images/upload/1/efc45342-31d4-45ca-b3d4-194977a4a9ce.jpg', 1, now(), now()),
+
+('images/upload/2/3c00e7ac-631a-4781-a199-f1ba2a37f33f.jpg', 2, now(), now()),
+('images/upload/2/770c6df5-cbde-4368-95c1-2b7750307404.jpg', 2, now(), now()),
+('images/upload/2/0859e7b6-4a0e-4afc-85f3-93f11dc7df8a.jpg', 2, now(), now()),
+('images/upload/2/f72593d5-96e5-4057-94ee-638b85a42348.jpg', 2, now(), now()),
+
+('images/upload/3/3e8f4269-2412-4916-b328-67edf46d051e.jpg', 3, now(), now()),
+('images/upload/3/4b529672-a7ce-4ed8-aa15-fa35e421e3ab.png', 3, now(), now()),
+('images/upload/3/38110fc5-2bd3-44a8-801c-0588d89b51b9.jpg', 3, now(), now()),
+('images/upload/3/c110da28-e7fe-4575-82ac-dc7592ff4408.png', 3, now(), now()),
+
+('images/upload/4/5d087d34-4c7b-46c9-8942-f40651aae87c.jpg', 4, now(), now()),
+('images/upload/4/6d183986-d3ae-4468-903e-1cc47f4f1948.jpg', 4, now(), now()),
+('images/upload/4/15f2c70c-e3a0-4f12-a46a-409fe1f22578.jpg', 4, now(), now()),
+('images/upload/4/562d7346-ec8c-4774-beff-ecc8b5923aab.jpg', 4, now(), now()),
+('images/upload/4/21851155-1fbc-4ee7-9813-72ac66333389.jpg', 4, now(), now()),
+('images/upload/4/bcd4ff75-3d51-47dd-af65-cfc104defbf7.jpg', 4, now(), now()),
+('images/upload/4/da9ec432-3f51-48c5-b306-eab320ce66c2.jpg', 4, now(), now()),
+('images/upload/4/f419450f-9f38-4786-84fb-4c529b2dba8f.jpg', 4, now(), now()),
+
+('images/upload/5/2d182173-b8b4-4556-99e6-3ef4e59fb7d3.jpg', 5, now(), now()),
+('images/upload/5/478a81ca-74c7-444d-8b6e-ffba63bda4c3.png', 5, now(), now()),
+('images/upload/5/950cf965-7e34-42f1-8ba0-e4cc2bdead99.png', 5, now(), now()),
+('images/upload/5/79141d34-dbcb-4e9b-ac26-1cefd35af505.jpg', 5, now(), now()),
+
+('images/upload/6/5ce555c0-8e91-4c03-b05b-86dcccb2eede.jpg', 6, now(), now()),
+('images/upload/6/7d885a06-5de0-4b59-9491-46199f0a23ac.jpg', 6, now(), now()),
+('images/upload/6/8749fc0f-ca5e-4a38-950f-59033dc677c8.jpg', 6, now(), now()),
+('images/upload/6/9504ad9c-b3e5-4d56-a531-09aa9f498f45.jpg', 6, now(), now()),
+('images/upload/6/a263aeea-b97d-469f-b619-3725a517c5a6.jpg', 6, now(), now()),
+('images/upload/6/d1b10d18-8adb-4ce6-8723-53e03702e428.jpg', 6, now(), now()),
+('images/upload/6/e56e0275-1476-4c2d-83e6-58621f393c02.jpg', 6, now(), now()),
+
+('images/upload/7/3bd75a3a-0306-4360-b6e9-1d72cec9dc97.png', 7, now(), now()),
+('images/upload/7/3cefbfb2-97d7-4aba-a7f7-7d1f4ab1d4ed.png', 7, now(), now()),
+('images/upload/7/637e9ac0-81bb-464d-bd0f-050cdfcd0b0b.jpg', 7, now(), now()),
+('images/upload/7/b1f8b44d-93ad-440a-8666-6e98e7f69887.jpg', 7, now(), now()),
+('images/upload/7/b8e06b71-5ba8-4bb5-b95b-1a1e7f50aeef.jpg', 7, now(), now()),
+
+('images/upload/8/1bed4d30-89ef-49c3-9144-8d590762c1ec.jpg', 8, now(), now()),
+('images/upload/8/2d6c1431-ce50-40ca-bf6f-201092d5e8b5.jpg', 8, now(), now()),
+('images/upload/8/373f7d82-6850-4625-adf2-c040ff81c909.jpg', 8, now(), now()),
+('images/upload/8/4978a6ef-9efd-455a-8f21-b883b861b502.jpg', 8, now(), now()),
+('images/upload/8/b1f8b44d-93ad-440a-8666-6e98e7f69887.jpg', 8, now(), now()),
+('images/upload/8/f17634dc-4f3d-4dc0-a006-0eff9ac7d6ae.jpg', 8, now(), now()),
+
+('images/upload/9/9ace250a-7b83-459a-a36e-ef3d9d330306.jpg', 9, now(), now()),
+('images/upload/9/3813fee0-f4ce-4b11-9274-3143ca97740f.jpg', 9, now(), now()),
+('images/upload/9/429069ef-5994-4d63-8ae0-4cab92c316e2.jpg', 9, now(), now()),
+('images/upload/9/767379a1-a9ee-4fd4-ac3b-6b204444db3c.jpg', 9, now(), now()),
+
+('images/upload/10/57a8b99b-4b12-4d6f-a342-0cb835febc89.jpg', 10, now(), now()),
+('images/upload/10/78b34ffc-0e17-46b5-8609-33813131f16e.jpg', 10, now(), now()),
+('images/upload/10/388df530-441b-4f53-8346-290dd4dbcd27.jpg', 10, now(), now()),
+('images/upload/10/fce011f2-9769-4516-a2c7-449cd645dc0c.jpg', 10, now(), now()),
+
+('images/upload/11/3fd5d386-8a2f-405b-bcde-cedda78f1f63.jpg', 11, now(), now()),
+('images/upload/11/9aba62b5-063e-4bd3-9249-3219f561107e.jpg', 11, now(), now()),
+('images/upload/11/c39cc46f-38c7-446d-b76d-fa5212c1097c.jpg', 11, now(), now()),
+('images/upload/11/c53e69a3-f8c4-416e-902d-41fe09d1d158.jpg', 11, now(), now()),
+
+('images/upload/12/0f29b7da-4cb6-4b2a-b9c2-94862f9a65d4.jpg', 12, now(), now()),
+('images/upload/12/02e2d68c-e80c-4718-97da-442a5f131f43.jpg', 12, now(), now()),
+('images/upload/12/9ae2aab2-c8c4-44a9-9a3b-2a8eba3be5c0.jpg', 12, now(), now()),
+('images/upload/12/9dd465c6-5947-4d53-a520-587cb20f2804.jpg', 12, now(), now()),
+('images/upload/12/16cd746c-31fe-41cd-aa7e-a399ab12cdfd.jpg', 12, now(), now()),
+('images/upload/12/47210fdf-0369-4405-9733-6f7636b0354c.jpg', 12, now(), now()),
+('images/upload/12/c3e7cc3e-868a-4c95-a31b-9cc57040ffb6.jpg', 12, now(), now()),
+('images/upload/12/dd8eeae1-8917-4e68-86b5-687fdc984969.jpg', 12, now(), now()),
+('images/upload/12/e638f995-2d25-405f-ac5c-7bfa587b32a4.jpg', 12, now(), now()),
+
+('images/upload/13/06d8f80f-4d3a-4c5d-9639-501a3d8adffc.jpg', 13, now(), now()),
+('images/upload/13/764b5124-99e1-45aa-8bd0-6c064f90f607.jpg', 13, now(), now()),
+('images/upload/13/8963ac77-fa20-4ef5-bd7d-a2a726340560.jpg', 13, now(), now()),
+('images/upload/13/e8427409-cfef-4b75-a6c6-0bb4e68ed6f8.jpg', 13, now(), now()),
+
+('images/upload/14/537ab690-ba6f-4f38-934f-5a48dd425267.jpg', 14, now(), now()),
+('images/upload/14/3054c7fd-ae14-46aa-a3dd-44b9ad22fa00.jpg', 14, now(), now()),
+('images/upload/14/e2d54560-b1c8-493d-a53d-3b00adaf8e19.jpg', 14, now(), now()),
+('images/upload/14/f2b98579-3412-4229-a26f-3328039ff8be.jpg', 14, now(), now()),
+
+('images/upload/15/1cdb5160-3bd5-4d51-a8d0-f5c25393a380.jpg', 15, now(), now()),
+('images/upload/15/80643884-c910-42f3-9ca8-f03f8000b608.jpg', 15, now(), now()),
+('images/upload/15/d0806c36-ad9e-489a-807f-839db618eb22.jpg', 15, now(), now()),
+('images/upload/15/df790b75-772b-4e33-98c6-96609e64519c.jpg', 15, now(), now()),
+
+('images/upload/16/533b0e74-8128-45ae-997c-8d5f74b5b0e8.jpg', 16, now(), now()),
+('images/upload/16/732b4c5b-dec4-4c33-a37b-7315a9217cf1.jpg', 16, now(), now()),
+('images/upload/16/56037b1c-7d49-419f-ae93-463b5195cae3.jpg', 16, now(), now()),
+('images/upload/16/a7c1b4e5-23fb-49d3-afc9-784da0ada07a.jpg', 16, now(), now()),
+
+('images/upload/17/0f1d713a-4c1c-41e0-aa2e-5b9e34b737ee.jpg', 17, now(), now()),
+('images/upload/17/0f1d713a-4c1c-41e0-aa2e-5b9e34b737ee.jpg', 17, now(), now()),
+('images/upload/17/0f1d713a-4c1c-41e0-aa2e-5b9e34b737ee.jpg', 17, now(), now()),
+
+('images/upload/18/0c66264a-0bbf-4855-8c83-17d9e637c1d7.jpg', 18, now(), now()),
+('images/upload/18/93a79332-3717-41bc-8b4b-5876b26abb46.jpg', 18, now(), now()),
+('images/upload/18/f6ce8dcc-01ab-4b30-8baf-e7d1e7662abe.jpg', 18, now(), now()),
+
+('images/upload/19/9e983419-260a-4b1d-89d4-34c846f4ca4f.jpg', 19, now(), now()),
+('images/upload/19/40d516f0-1c1b-444a-8b7c-bc27437bfa03.jpg', 19, now(), now()),
+('images/upload/19/3579005f-e163-4317-9c96-b2b95bd1b8ec.jpg', 19, now(), now()),
+('images/upload/19/a99da17c-9d39-433c-a9fe-54c74699a040.jpg', 19, now(), now()),
+
+('images/upload/20/3ec01322-803a-4528-93fb-494e17e8936c.jpg', 20, now(), now()),
+('images/upload/20/4e1e49b0-cb03-45fb-90b0-896551da6cd5.jpg', 20, now(), now()),
+('images/upload/20/69f5d3fe-532a-486e-962a-1ba8b72c453c.jpg', 20, now(), now()),
+('images/upload/20/0999086a-4f70-4c1c-bbb5-c94733925a46.jpg', 20, now(), now()),
+
+('images/upload/21/d63b25b4-f979-478c-8b07-f2c37580c053.jpg', 21, now(), now()),
+('images/upload/21/efad473b-c97a-4fd4-950c-2e52e2bd3605.jpg', 21, now(), now()),
+('images/upload/21/f5cb2d57-4a44-400a-9be5-ada6bef294fb.jpg', 21, now(), now()),
+('images/upload/21/fb725ac1-9a2a-48a1-a919-973680036026.jpg', 21, now(), now()),
+
+('images/upload/22/8c2ebb8d-526b-4dbd-a874-a30cdd5bcd96.jpg', 22, now(), now()),
+('images/upload/22/9a8e1bc9-47a7-43ed-8502-9a204337a490.jpg', 22, now(), now()),
+('images/upload/22/15ab7582-244d-488a-af51-17f513fbee56.jpg', 22, now(), now()),
+('images/upload/22/239b77d2-f6e6-41fa-9023-175a35cdf9cf.jpg', 22, now(), now()),
+
+('images/upload/23/4d4869cf-e878-4233-96e3-38adb4ee68ea.jpg', 23, now(), now()),
+('images/upload/23/99fdfb17-344b-4cbe-af3a-56fceeee70ac.jpg', 23, now(), now()),
+('images/upload/23/d12b17eb-9e6d-40af-ade2-682da9b0eddf.jpg', 23, now(), now()),
+('images/upload/23/da840634-6ae3-4837-8b9d-331b77e20fa7.jpg', 23, now(), now()),
+
+('images/upload/24/4823b9cb-0f40-4ec1-bf59-cbc3e2384eb9.jpg', 24, now(), now()),
+('images/upload/24/6690abf7-02d3-4eac-9b99-a3b638e75e4c.jpg', 24, now(), now()),
+('images/upload/24/08764754-dd69-4143-9a32-ce07af0d34ce.jpg', 24, now(), now()),
+('images/upload/24/de479754-88c8-439f-90c0-6f159cb1da25.jpg', 24, now(), now()),
+
+('images/upload/25/4ed56c16-1d88-4966-8a04-26ef681633fd.jpg', 25, now(), now()),
+('images/upload/25/9c1fabe9-9829-41e1-bbef-c5d173bd1dbd.jpg', 25, now(), now()),
+('images/upload/25/09cebabe-9f20-4eff-a3f0-2370f2f93468.jpg', 25, now(), now()),
+('images/upload/25/98a484aa-858d-49c3-858b-9af4250e8d01.jpg', 25, now(), now()),
+
+('images/upload/26/2c939f2b-8989-4460-8e2b-385c16365abf.jpg', 26, now(), now()),
+('images/upload/26/4d002d67-562b-43df-af45-c00cfebf23c9.jpg', 26, now(), now()),
+('images/upload/26/97c44c30-2f0a-4378-ac9d-96a494dda818.jpg', 26, now(), now()),
+('images/upload/26/697e671c-1f3f-4ddc-a55e-d3e304e3c0c2.jpg', 26, now(), now()),
+
+('images/upload/27/610a42cd-e415-4f84-bdeb-840986ceb5fa.jpg', 27, now(), now()),
+('images/upload/27/cb478f83-c9c7-41e7-aa67-c9b4cbba2e7e.jpg', 27, now(), now()),
+('images/upload/27/e46a5156-b46d-41ca-bc3b-3cf7529c09e9.jpg', 27, now(), now()),
+('images/upload/27/f43ed65b-b7af-4ecc-9a0c-5b5e3e718c4a.jpg', 27, now(), now()),
+
+('images/upload/28/80445267-7c69-4a53-873d-0eb63d4128df.jpg', 28, now(), now()),
+('images/upload/28/bdfa279f-f5f7-4251-8b40-f49bbb7294be.jpg', 28, now(), now()),
+('images/upload/28/e2be6fee-03c1-4fc6-bf4a-0ef35c50b6ec.jpg', 28, now(), now()),
+('images/upload/28/e7b5ca9f-e3e9-478d-9ba5-5edb4ad62f1d.jpg', 28, now(), now()),
+
+('images/upload/29/3a982508-c92b-4a34-838a-ae14b0074e6d.jpg', 29, now(), now()),
+('images/upload/29/c5849cd7-4ca1-47eb-a92f-1e2e15f7204d.jpg', 29, now(), now()),
+('images/upload/29/e781786a-6357-4a74-aae1-d26c97e05dfb.jpg', 29, now(), now()),
+('images/upload/29/ec7e5197-6463-4a26-a373-ca772c6a8d10.jpg', 29, now(), now()),
+
+('images/upload/30/574ec0e0-7d74-4bad-9dbd-17ee22086352.jpg', 30, now(), now()),
+('images/upload/30/5267f081-4d85-4e9f-ba86-616412c0bd88.jpg', 30, now(), now()),
+('images/upload/30/693857e0-c73c-42ac-867b-ce6ae9f28955.jpg', 30, now(), now()),
+('images/upload/30/dfd0f944-5955-4023-b1f7-8e44aee642c2.jpg', 30, now(), now()),
+
+('images/upload/31/82e262e1-97e5-4155-9130-23caa6376df5.jpg', 31, now(), now()),
+('images/upload/31/55529da8-6e07-411b-a0c0-202189ec3238.jpg', 31, now(), now()),
+('images/upload/31/0795667f-27d9-4d01-93af-1240c6d7f0ac.jpg', 31, now(), now()),
+
+('images/upload/32/32c03694-8149-49a7-906d-15d074098e58.jpg', 32, now(), now()),
+('images/upload/32/846ee266-e3f9-42e2-a8dd-92d6f1855e71.jpg', 32, now(), now()),
+('images/upload/32/aed19a29-9013-4cf7-a3ef-e230fa9b78ae.jpg', 32, now(), now()),
+('images/upload/32/fc1f3818-0373-40e1-ad55-6c5ef621387c.jpg', 32, now(), now()),
+
+('images/upload/33/5a163267-cc4a-4b25-aaee-9a4e192fca1c.jpg', 33, now(), now()),
+('images/upload/33/aded2f11-e0a5-48ef-80ca-f625d431f3a4.jpg', 33, now(), now()),
+('images/upload/33/d20c899b-2718-4d8e-9112-d8e38358dc19.jpg', 33, now(), now()),
+('images/upload/33/fb471504-a296-4f8c-9874-d09ca6516030.jpg', 33, now(), now()),
+
+('images/upload/34/1ae593ff-f862-4e50-b088-71bb519ace2b.jpg', 34, now(), now()),
+('images/upload/34/2e442400-0f8a-4a75-aa38-b3267ba14b9f.jpg', 34, now(), now()),
+('images/upload/34/5e48ec59-27e5-47d4-a572-07de35e5b821.jpg', 34, now(), now()),
+('images/upload/34/8fdeee26-d691-4245-924e-b49006f65c7b.jpg', 34, now(), now()),
+
+('images/upload/35/1b189745-7b03-4713-910d-e2dad3e1d182.jpg', 35, now(), now()),
+('images/upload/35/35cdb2c3-df24-4831-b48d-dc4769a9df47.jpg', 35, now(), now()),
+('images/upload/35/45fab980-d78f-431f-b334-c7194e023bdf.jpg', 35, now(), now()),
+('images/upload/35/eb211b79-0161-430d-93f8-cd61104547fb.jpg', 35, now(), now()),
+
+('images/upload/36/0e9d644b-2213-4fb9-b177-761881ef20aa.jpg', 36, now(), now()),
+('images/upload/36/78ddd5b6-3e38-43e5-8d3d-7670f83c3ed4.jpg', 36, now(), now()),
+('images/upload/36/83bd7261-cba3-4455-9674-df997c2ae1a9.jpg', 36, now(), now()),
+
+('images/upload/37/1ef75fa2-783e-421c-b2ee-de2fc4d42206.jpg', 37, now(), now()),
+('images/upload/37/075334d3-9b15-4c18-abde-f027f725ace4.jpg', 37, now(), now()),
+('images/upload/37/a6f9acfa-6637-4611-b7eb-92cbe93abc77.jpg', 37, now(), now()),
+('images/upload/37/db7bbfca-53e6-472e-8aac-ee3401376998.jpg', 37, now(), now()),
+
+('images/upload/38/881d2d2f-496e-450e-9a52-ccdcd329fe2c.jpg', 38, now(), now()),
+('images/upload/38/81050525-e49d-4761-ab29-c842a651b913.jpg', 38, now(), now()),
+('images/upload/38/cd0ea1ea-db08-4402-8645-b29e61c78c85.jpg', 38, now(), now()),
+('images/upload/38/f20be03e-1b42-46be-a7bd-ce4c6f4bf6c1.jpg', 38, now(), now()),
+
+('images/upload/39/05a9e430-7315-4060-aa21-dc66ba4c9494.jpg', 39, now(), now()),
+('images/upload/39/8a6eca96-9f82-4e22-a4df-9d8e63410bca.jpg', 39, now(), now()),
+('images/upload/39/9eab2b6b-e422-41d8-8af8-c6621e2825ff.jpg', 39, now(), now()),
+('images/upload/39/219a9bc4-fc00-4a02-804c-448c852100b1.jpg', 39, now(), now()),
+
+('images/upload/40/5e1b04e4-9087-401c-be70-a83660cdcb70.jpg', 40, now(), now()),
+('images/upload/40/943d6398-4e73-4895-aff1-5721f47082c8.jpg', 40, now(), now()),
+('images/upload/40/b791be9f-e08e-4695-9741-b75cc41656f7.jpg', 40, now(), now()),
+('images/upload/40/b8868c2b-1cb3-4347-962f-f677d6626157.jpg', 40, now(), now()),
+
