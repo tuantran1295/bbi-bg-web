@@ -20,6 +20,14 @@ $(document).ready(function(){
         provinceDropdown.toggleClass('show');
     });
 
+    var subMenu = $('.submenu');
+    var iconMenu = $('.icon-menu');
+    iconMenu.bind('click', function () {
+        iconMenu.toggleClass('active');
+        subMenu.toggle();
+        body.toggleClass('open');
+    });
+
     $('.home-slider').slick({
         infinite: true,
         slidesToShow: 3,

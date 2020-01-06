@@ -3272,3 +3272,8 @@ a{
     background-color:#dd4b39!important;
     color:#fff
 }
+
+.nav-menu-btn {
+    font-family: FontAwesome !important;
+
+}

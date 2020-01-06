@@ -20,7 +20,7 @@
 {{--                            </div>--}}
 {{--                        </div>--}}
 {{--                    </li>--}}
-                    <li class="nav-item"><a class="nav-link pr-md-0 icon-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span></span></a></li>
+                        <li class="nav-item"><a class="icon-menu nav-link pr-md-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span></span><span></span><span></span></a></li>
                 </ul>
             </div>
         </nav>
