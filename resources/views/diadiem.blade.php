@@ -68,6 +68,9 @@
                                 <div class="col-6 pr-1">
                                     <a href="https://itunes.apple.com/us/app/bbi-mall/id1407571710" class="d-block" rel="noopener noreferrer" target="_blank"><img src="images/btn-ios.png" alt="iOS" class="w-100"></a>
                                 </div>
+                                <div class="col-6 pr-1">
+                                    <a href="https://play.google.com/store/apps/details?id=com.ecommerce.bbimall" class="d-block" rel="noopener noreferrer" target="_blank"><img src="images/btn-android.png" alt="android" class="w-100"></a>
+                                </div>
                             </div>
                         </div>
                     </div>
