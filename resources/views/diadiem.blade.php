@@ -33,7 +33,7 @@
                             <div class="search-tool">
                                 <div class="input-group">
                                     <div class="input-group-prepend ico-search">
-                                        <div class="city-filter show">
+                                        <div class="city-filter">
                                             <div class="dropdown">
                                                 <button class="btn btn-link dropdown-toggle" type="button" id="city-filter-ct" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hà Nội</button>
                                                 <div class="dropdown-menu default-menu main-menu sm-main-menu animation" aria-labelledby="dropdownMenuButton3">

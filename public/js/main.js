@@ -1,13 +1,10 @@
-
 $(document).ready(function(){
     var body = $('body');
     $(window).scroll(function () {
         // scroll to top
         if($(window).scrollTop() === 0){
-            console.log('Add scroll class');
             body.removeClass('scroll');
         } else {
-            console.log('remove scroll');
             body.addClass('scroll');
         }
         // scroll to bottom
@@ -20,7 +17,6 @@ $(document).ready(function(){
 
     var provinceDropdown = $('.city-filter');
     $('#city-filter-ct').bind('click', function () {
-        console.log('BTN CLICK EVENT FIRED!');
         provinceDropdown.toggleClass('show');
     });
 
