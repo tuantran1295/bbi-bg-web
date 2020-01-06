@@ -4,7 +4,7 @@
         <title>@yield('title','Chào mừng đến với BBI Bắc Giang')</title>
         @yield('header')
     </head>
-    <body class="">
+    <body>
 
         @include('layout.nav')
         <div class="container">

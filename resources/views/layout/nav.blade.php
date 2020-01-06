@@ -5,7 +5,7 @@
                 <ul class="navbar-nav">
                     @foreach ($categories as $category)
                         @if ($category->id < 8)
-                            <li class="nav-item"><a class="nav-link" href="category/{{$category->id}}">{{$category->name}}</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/category/{{$category->id}}">{{$category->name}}</a></li>
                         @endif
                     @endforeach
 {{--                    <li class="nav-item">--}}

@@ -35,7 +35,7 @@
                                     <div class="input-group-prepend ico-search">
                                         <div class="city-filter">
                                             <div class="dropdown">
-                                                <button class="btn btn-link dropdown-toggle" type="button" id="city-filter-ct" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hà Nội</button>
+                                                <button class="btn btn-link dropdown-toggle" type="button" id="city-filter-ct" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Bắc Giang</button>
                                                 <div class="dropdown-menu default-menu main-menu sm-main-menu animation" aria-labelledby="dropdownMenuButton3">
                                                     @foreach($provinces as $province)
                                                         <a class="dropdown-item d-flex justify-content-between" href="/province/{{$province->id}}"><span>{{$province->name}}</span><span class="text-muted">{{$province->companies()->count()}}<span> Địa điểm</span></span></a>
