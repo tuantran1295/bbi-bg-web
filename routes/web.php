@@ -14,4 +14,6 @@
 Route::get('/', 'CompanyController@index');
 Route::get('/category/{category}', 'CompanyController@getCompaniesByCategory');
 Route::get('/company/{company}', 'CompanyController@show');
+Route::get('/province/{province}', 'CompanyController@getCompaniesByProvince');
+Route::post('/search', 'CompanyController@search');
 ?>

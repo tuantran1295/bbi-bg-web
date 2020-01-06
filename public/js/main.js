@@ -1,22 +1,29 @@
-window.onload = function () {
-    var body = document.getElementsByTagName("body")[0];
-    body.onscroll = function () {
+
+$(document).ready(function(){
+    var body = $('body');
+    $(window).scroll(function () {
         // scroll to top
         if($(window).scrollTop() === 0){
-            body.classList.remove('scroll');
+            console.log('Add scroll class');
+            body.removeClass('scroll');
         } else {
-            body.classList.add('scroll');
+            console.log('remove scroll');
+            body.addClass('scroll');
         }
         // scroll to bottom
         if($(window).scrollTop() + $(window).height() == $(document).height()) {
-            body.classList.add('endpage');
+            body.addClass('endpage');
         } else {
-            body.classList.remove('endpage');
+            body.removeClass('endpage');
         }
-    }
-}
+    });
 
-$(document).ready(function(){
+    var provinceDropdown = $('.city-filter');
+    $('#city-filter-ct').bind('click', function () {
+        console.log('BTN CLICK EVENT FIRED!');
+        provinceDropdown.toggleClass('show');
+    });
+
     $('.home-slider').slick({
         infinite: true,
         slidesToShow: 3,

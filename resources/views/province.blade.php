@@ -28,28 +28,19 @@
                 <div class="col-md-12">
                     <div class="list-all">
                         <div class="d-flex flex-wrap secondary-title">
-                            <h4>Kết quả tìm kiếm doanh nghiệp theo danh mục {{$currentCat->name}}</h4>
+                            <h4>Kết quả tìm kiếm doanh nghiệp theo địa điểm {{$currentProvince->name}}</h4>
                         </div>
                         <div class="row no-gutters">
                             @foreach($companies as $company)
-                            <div class="col-md-2 item">
-                                <a href="/company/{{$company->id}}" style="color: black;">
-                                    <div class="background-item" style="background-image: url('/{{$company->images()->first()->url}}');"></div>
-                                    <h5>{{$company->name}}</h5>
-                                    <p>{{$company->address}}</p>
-                                </a>
-                            </div>
+                                <div class="col-md-2 item">
+                                    <a href="/company/{{$company->id}}" style="color: black;">
+                                        <div class="background-item" style="background-image: url('/{{$company->images()->first()->url}}');"></div>
+                                        <h5>{{$company->name}}</h5>
+                                        <p>{{$company->address}}</p>
+                                    </a>
+                                </div>
                             @endforeach
                         </div>
-{{--                        <nav class="py-4">--}}
-{{--                            <ul class="pagination justify-content-center">--}}
-{{--                                <li class="page-item disabled"><a class="page-link" aria-label="Previous"><span aria-hidden="true">«</span></a></li>--}}
-{{--                                <li class="page-item active"><a class="page-link" href="#">1</a></li>--}}
-{{--                                <li class="page-item false"><a class="page-link" href="#">2</a></li>--}}
-{{--                                <li class="page-item false"><a class="page-link" href="#">3</a></li>--}}
-{{--                                <li class="page-item disabled"><a class="page-link" aria-label="Next"><span aria-hidden="true">»</span></a></li>--}}
-{{--                            </ul>--}}
-{{--                        </nav>--}}
                         <div class="box-footer clearfix"></div>
                     </div>
                 </div>

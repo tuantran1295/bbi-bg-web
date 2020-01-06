@@ -31,68 +31,15 @@
     <div class="submenu-dropdown">
         <div class="container">
             <div class="row">
-                <div class="col-md-2 col-6">
-                    <h6 class="text-sm font-weight-bold text-uppercase"><a style="color: black;"><span>Home</span></a></h6></div>
-                <div class="col-md-2 col-6">
-                    <h6 class="text-sm font-weight-bold text-uppercase"><a href="/all/33" style="color: black;">Xây Dựng</a></h6>
-                    <ul class="mb-4"></ul>
-                </div>
-                <div class="col-md-2 col-6">
-                    <h6 class="text-sm font-weight-bold text-uppercase"><a href="/all/34" style="color: black;">Sinh trắc vân tay</a></h6>
-                    <ul class="mb-4"></ul>
-                </div>
-                <div class="col-md-2 col-6">
-                    <h6 class="text-sm font-weight-bold text-uppercase"><a href="/all/36" style="color: black;">Bảo hiểm</a></h6>
-                    <ul class="mb-4"></ul>
-                </div>
-                <div class="col-md-2 col-6">
-                    <h6 class="text-sm font-weight-bold text-uppercase"><a href="/all/37" style="color: black;">Điện dân dụng</a></h6>
-                    <ul class="mb-4"></ul>
-                </div>
-                <div class="col-md-2 col-6">
-                    <h6 class="text-sm font-weight-bold text-uppercase"><a href="/all/6" style="color: black;">Giáo dục- Đào tạo</a></h6>
-                    <ul class="mb-4">
-                        <li><a class="text-sm" href="/all/7">Sách, VPP, Quà tặng</a></li>
-                        <li><a class="text-sm" href="/all/8">Trung tâm Giáo dục</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-2 col-6">
-                    <h6 class="text-sm font-weight-bold text-uppercase"><a href="/all/4" style="color: black;">Bất động sản</a></h6>
-                    <ul class="mb-4">
-                        <li><a class="text-sm" href="/all/32">Du lịch</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-2 col-6">
-                    <h6 class="text-sm font-weight-bold text-uppercase"><a href="/all/11" style="color: black;">Phòng khám</a></h6>
-                    <ul class="mb-4">
-                        <li><a class="text-sm" href="/all/13">Phòng khám</a></li>
-                        <li><a class="text-sm" href="/all/14">Thực phẩm chức năng</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-2 col-6">
-                    <h6 class="text-sm font-weight-bold text-uppercase"><a href="/all/19" style="color: black;">Ô tô- Xe máy- Xe đạp</a></h6>
-                    <ul class="mb-4"></ul>
-                </div>
-                <div class="col-md-2 col-6">
-                    <h6 class="text-sm font-weight-bold text-uppercase"><a href="/all/21" style="color: black;">Giải trí- Đồ chơi</a></h6>
-                    <ul class="mb-4"></ul>
-                </div>
-                <div class="col-md-2 col-6">
-                    <h6 class="text-sm font-weight-bold text-uppercase"><a href="/all/22" style="color: black;">Điện thoại- Máy tính bảng</a></h6>
-                    <ul class="mb-4"></ul>
-                </div>
-                <div class="col-md-2 col-6">
-                    <h6 class="text-sm font-weight-bold text-uppercase"><a href="/all/23" style="color: black;">Máy ảnh- Quay phim</a></h6>
-                    <ul class="mb-4"></ul>
-                </div>
-                <div class="col-md-2 col-6">
-                    <h6 class="text-sm font-weight-bold text-uppercase"><a href="/all/26" style="color: black;">Vật liệu xây dựng</a></h6>
-                    <ul class="mb-4"></ul>
-                </div>
-                <div class="col-md-2 col-6">
-                    <h6 class="text-sm font-weight-bold text-uppercase"><a href="/all/31" style="color: black;">Thiết bị gia dụng</a></h6>
-                    <ul class="mb-4"></ul>
-                </div>
+                @foreach($categories as $category)
+                    <div class="col-md-2 col-6">
+                        <h6 class="text-sm font-weight-bold text-uppercase"><a href="/category/{{$category->id}}" style="color: black;">{{$category->name}}</a></h6>
+                                            <ul class="mb-4">
+{{--                                                <li><a class="text-sm" href="/all/7">Sách, VPP, Quà tặng</a></li>--}}
+{{--                                                <li><a class="text-sm" href="/all/8">Trung tâm Giáo dục</a></li>--}}
+                                            </ul>
+                    </div>
+                @endforeach
             </div>
         </div>
     </div>
