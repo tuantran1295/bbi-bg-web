@@ -12,11 +12,15 @@ class CompanyController extends Controller
     public function index() {
         $categories = Category::all();
         $provinces = Province::all();
-        $companies = Company::inRandomOrder()->limit(35)->get();
+        $featured = Company::findMany([5, 7, 14, 22, 30, 40 ,48 ,42 ,47 ,56])->sortBy('name');
+        $newConnected = Company::orderBy('created_at', 'desc')->take(10)->get();
+        $random = Company::inRandomOrder()->limit(36)->get();
         return view('diadiem', [
             'categories'=> $categories,
-            'companies' => $companies,
-            'provinces' => $provinces
+            'provinces' => $provinces,
+            'featured' => $featured,
+            'newConnected' => $newConnected,
+            'random' => $random
         ]);
     }
 
@@ -60,4 +64,31 @@ class CompanyController extends Controller
             'keyword' => $keyword
         ]);
     }
-}
+
+    public function all() {
+        $categories = Category::all();
+        $companies = Company::all();
+        return view('all', [
+            'categories'=> $categories,
+            'companies' => $companies
+        ]);
+    }
+
+    public function getFeatured() {
+        $categories = Category::all();
+        $featured = Company::findMany([5, 7, 14, 22, 30, 40 ,48 ,42 ,47 ,56])->sortBy('name');
+        return view('featured', [
+            'categories' => $categories,
+            'companies' => $featured
+        ]);
+    }
+
+    public function getNewConnected() {
+        $categories = Category::all();
+        $newConnected = Company::orderBy('created_at', 'desc')->take(10)->get();
+        return view('new-connected', [
+           'categories' => $categories,
+           'companies' => $newConnected
+        ]);
+    }
+ }

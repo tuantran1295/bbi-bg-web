@@ -77,21 +77,19 @@
                         <div class="category thumbnail-slide mb-2">
                             <div class="title-list-item">
                                 <div class="d-flex flex-wrap text justify-content-between secondary-title">
-                                    <h4><span>Doanh nghiệp tiêu biểu</span></h4><a href="/list-all?status=featured" class="align-self-center"><span>xem tất cả</span> (10)</a></div>
+                                    <h4><span>Doanh nghiệp tiêu biểu</span></h4><a href="featured" class="align-self-center"><span>xem tất cả</span> (10)</a></div>
                             </div>
                             {{--Carousel here--}}
                             <div class="list-ct">
                                 <div class="list-wrap">
                                     <div class="home-slider">
-                                        @foreach($companies as $company)
-                                            @if($company-> id < 11)
-                                                <div class="item">
-                                                    <a class="home-banner" href="company/{{$company->id}}"><img class="img-responsive" src="{{$company->images()->first()->url}}" alt="{{$company->name}}" style="height: 144px; width: 100%; padding-right: 5px;">
-                                                        <h5>{{$company->name}}</h5>
-                                                        <p class="card-text"><small class="text-muted"></small></p>
-                                                    </a>
-                                                </div>
-                                            @endif
+                                        @foreach($featured as $company)
+                                            <div class="item">
+                                                <a class="home-banner" href="company/{{$company->id}}"><img class="img-responsive" src="{{$company->images()->first()->url}}" alt="{{$company->name}}" style="height: 144px; width: 100%; padding-right: 5px;">
+                                                    <h5>{{$company->name}}</h5>
+                                                    <p class="card-text"><small class="text-muted"></small></p>
+                                                </a>
+                                            </div>
                                         @endforeach
                                     </div>
                                 </div>
@@ -100,21 +98,19 @@
                         <div class="category thumbnail-slide mb-2">
                             <div class="title-list-item">
                                 <div class="d-flex flex-wrap text justify-content-between secondary-title">
-                                    <h4><span>Doanh nghiệp mới kết nối</span></h4><a href="/list-all?status=new" class="align-self-center"><span>xem tất cả</span> (10)</a></div>
+                                    <h4><span>Doanh nghiệp mới kết nối</span></h4><a href="/new-connected" class="align-self-center"><span>xem tất cả</span> (10)</a></div>
                             </div>
                             {{--Carousel here--}}
                             <div class="list-ct">
                                 <div class="list-wrap">
                                     <div class="home-slider">
-                                        @foreach($companies as $company)
-                                            @if($company-> id > 11 && $company->id < 21)
-                                                <div class="item">
-                                                    <a class="home-banner" href="company/{{$company->id}}"><img class="img-responsive" src="{{$company->images()->first()->url}}" alt="{{$company->name}}" style="height: 144px; width: 100%; padding-right: 5px;">
-                                                        <h5>{{$company->name}}</h5>
-                                                        <p class="card-text"><small class="text-muted"></small></p>
-                                                    </a>
-                                                </div>
-                                            @endif
+                                        @foreach($newConnected as $company)
+                                            <div class="item">
+                                                <a class="home-banner" href="company/{{$company->id}}"><img class="img-responsive" src="{{$company->images()->first()->url}}" alt="{{$company->name}}" style="height: 144px; width: 100%; padding-right: 5px;">
+                                                    <h5>{{$company->name}}</h5>
+                                                    <p class="card-text"><small class="text-muted"></small></p>
+                                                </a>
+                                            </div>
                                         @endforeach
                                     </div>
                                 </div>
@@ -123,23 +119,21 @@
                         <div class="category mb-2">
                             <div class="title-list-item">
                                 <div class="d-flex flex-wrap text justify-content-between secondary-title">
-                                    <h4><span>Doanh nghiệp đã kết nối</span></h4><a href="/list-all"><span>xem tất cả</span> (707)</a></div>
+                                    <h4><span>Doanh nghiệp đã kết nối</span></h4><a href="/all"><span>xem tất cả</span> ({{\App\Company::count()}})</a></div>
                             </div>
                             <div class="list-ct">
                                 <div class="row no-gutters list-wrap">
-                                    @foreach($companies as $company)
-                                        @if($company->id > 21)
-                                            <div class="col-md-4 item">
-                                                <a href="company/{{$company->id}}}">
-                                                    <div class="background-item" style="background-image: url('{{$company->images()->first()->url}}');"></div>
-                                                    <h5>{{$company->name}}</h5>
-                                                    <p class="card-text"><small class="text-muted">{{$company->address}}</small></p>
-                                                </a>
-                                            </div>
-                                        @endif
+                                    @foreach($random as $company)
+                                        <div class="col-md-4 item">
+                                            <a href="company/{{$company->id}}}">
+                                                <div class="background-item" style="background-image: url('{{$company->images()->first()->url}}');"></div>
+                                                <h5>{{$company->name}}</h5>
+                                                <p class="card-text"><small class="text-muted">{{$company->address}}</small></p>
+                                            </a>
+                                        </div>
                                     @endforeach
                                 </div>
-                                <div class="text-center my-3"><a class="align-self-center d-inline-block px-5 py-2 bg-light rounded text-dark font-weight-bold border" href="/list-all"><span>xem tất cả</span></a></div>
+                                <div class="text-center my-3"><a class="align-self-center d-inline-block px-5 py-2 bg-light rounded text-dark font-weight-bold border" href="/all"><span>xem tất cả</span></a></div>
                             </div>
                         </div>
                     </div>
